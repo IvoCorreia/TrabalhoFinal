@@ -18,6 +18,14 @@ namespace ProjetoElevador_Documentacao.Controllers
         {
             return View();
         }
+        public IActionResult Documentacao()
+        {
+            return View();
+        }
+        public IActionResult Trabalho()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

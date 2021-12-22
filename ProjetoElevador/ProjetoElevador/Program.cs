@@ -8,12 +8,12 @@ namespace ProjetoElevador
     {
         static void Main(string[] args)
         {
-          
+
 
             // INICIALIZACAO DO ELEVADOR
             Console.WriteLine("============== SISTEMA DE ELEVADOR ==============");
             Console.WriteLine("Inicialização Padrão: 4 andares e 4  vagas");
-   Elevador elevador = new Elevador();
+            Elevador elevador = new Elevador();
             ConsoleKeyInfo op;
 
 
@@ -118,12 +118,16 @@ namespace ProjetoElevador
 
 
 
-
+                // sair se escolhida a opção da tecla 'Q' ou [ESC]
             } while (op.Key != ConsoleKey.Q && op.Key != ConsoleKey.Escape);
 
 
         }
 
+        /// <summary>
+        /// Imprimir menu e status atual do elevador
+        /// </summary>
+        /// <param name="elevador">Informar elevador para </param>
         private static void ImprimeStatusMenu(Elevador elevador)
         {
             Console.WriteLine("============== SISTEMA DE ELEVADOR ==============");

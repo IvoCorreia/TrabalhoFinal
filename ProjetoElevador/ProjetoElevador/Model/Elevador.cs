@@ -6,7 +6,6 @@ namespace ProjetoElevador.Model
     /// <summary>Class <c>Elevador</c> modela a estrutura de um 
     /// Elevador</summary>
     /// 
-
     internal class Elevador
     {
 
@@ -18,6 +17,13 @@ namespace ProjetoElevador.Model
         List<string> Pessoa;
         List<int> AndarDesejado { get; set; }
 
+
+        /// <summary>
+        /// Contrutor do Elevador inicializa com capacidade de 4 pessoas e 
+        /// estrutura para 4 andares
+        /// </summary>
+        /// <param name="capacidade"> Capacidade de passageiros do Elevador</param>
+        /// <param name="totalAndares">Total de andares do Elevador</param>
         public Elevador(int capacidade = 4, int totalAndares = 4)
         {
             this.Pessoa = new List<string>();
@@ -27,12 +33,21 @@ namespace ProjetoElevador.Model
             this.AndarDesejado = new List<int>();
         }
 
+        /// <summary>
+        ///   Informa a quantidade de pessoas do elevador
+        /// </summary>
+        /// <returns>(int) pessoas no elevador</returns>
         internal int Ocupacao()
         {
             return this.Pessoa.Count;
         }
 
-        //retorna quantidade de pessoas no elevador
+        /// <summary>
+        /// Adicionar uma pessoa no elevador
+        /// </summary>
+        /// <param name="nome">nome do passageiro</param>
+        /// <param name="andar">andar de destino do passageiro</param>
+        /// <returns></returns>
         public int Entrar(String nome, int andar)
         {
             Pessoa.Add(nome);
@@ -41,7 +56,10 @@ namespace ProjetoElevador.Model
 
         }
 
-        // retorna quantide de pessoas no elevador
+        /// <summary>
+        /// Permite uma pessoa sair do Elevador
+        /// </summary>
+        /// <returns>nova quantidade de passageiros do elevador</returns>
         public int Sair()
         {
 
@@ -50,13 +68,21 @@ namespace ProjetoElevador.Model
             return Pessoa.Count;
 
         }
-        //Retorna o Novo Andar 
+
+
+        /// <summary>
+        /// Sobe o elevador
+        /// </summary>
+        /// <returns>novo andar que se encontra o Elevador</returns>
         public int Subir()
         {
             return this.AndarAtual++;
         }
 
-        //Retorna o Novo Andar 
+        /// <summary>
+        /// Desce o elevador
+        /// </summary>
+        /// <returns>devolve o novo andar do elevador</returns>
         public int Descer()
         {
 
@@ -64,12 +90,18 @@ namespace ProjetoElevador.Model
 
         }
 
-        // informa posicao atual do elevador
+        /// <summary>
+        ///   informa posicao atual do elevador
+        /// </summary>
+        /// <returns>devolve a posicao do elevador</returns>
         public int OndeEsta()
         {
             return this.AndarAtual;
         }
-        // retorna vagas disponiveis
+        /// <summary>
+        ///   retorna as vagas disponiveis
+        /// </summary>
+        /// <returns>devolve a quantidade de vagas</returns>
         public int QuantasVagas()
         {
             return this.Capacidade - AndarDesejado.Count;
