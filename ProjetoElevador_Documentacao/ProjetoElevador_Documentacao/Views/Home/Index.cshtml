@@ -2,11 +2,113 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div  >
     <h1 class="display-4">Projeto Elevador</h1>
     <p>Nesta pagina você encontra a documentação referente ao Projeto Sistema de Elevador em C# feito para a conclusão do Curso C# da Samsung Ocean Brasil</p>
 </div>
-<div class="text-center">
-    <h2 class="display-5">Pricipais funcionalidades</h2>
-    <p>O sitema de Elevador possui as funções de Entrar e Sair para os Passageiros e de Subir e Descer os Andares </p>
+
+<div  >
+    <h2 class="display-5">Proposta de Trabalho</h2>
+    <p>Criar um sistema com recursos para um Elevador, permitindo a entrada e saida de um passageiro e subir e descer os andares. </p>
+ <p>Permitir a inicialização do Elevador com parametros como Andares Totais e Capacidade de Passageiros</p><a  asp-area="" asp-controller="Home" asp-action="Trabalho">Saiba Mais</a>
+</div><div  >
+    <h2 class="display-5">Documentação da Solução</h2>
+    <p>A solução implantada utiliza um Lista para inclusão do passageiro e ainda permite utilização de teclas de atalho para movimentação do elevador </p>
+<a  asp-area="" asp-controller="Home" asp-action="Documentacao">Saiba Mais</a></div>
+
+<h1> Manual do Sistema </h1>
+
+<h3> Tela Inicial</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela01.PNG"   />
+<div class="legenda">
+    Ao iniciar o sistema ele vem com o padrão de 4 andares e 4 vagas.<br/>
+    Inicialmente o elevador se localiza no andar terreo e com todas as vagas disponiveis.
+</div>
+</div>
+<h3> Definir padrão de Operação do Elevador</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela02.PNG"   />
+<div class="legenda">
+    Utilizando a Opção do menu <strong>S</strong> permitirá entrar as configurações desejadas como <br/>
+    Quantos Andares e Qual a Capacidade do Elevador.
+</div>
+</div>
+<h3> Atualização dos Dados de Operação</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela03.PNG"   />
+<div class="legenda">
+    Após informada novas configurações, elas serão apresentadas na tela inicial.
+</div>
+</div>
+<h3> Entrando no Elevador</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela04.PNG"   />
+<div class="legenda">
+    Para adionar um passageiro no Elevador utilize a opção <strong>I</strong><br/>
+    Podem ser utilizados os atalhos do teclado <i>[ENTER] OU SETA DA DIREITA</i>
+</div>
+</div>
+<h3> Ocupação Maxima</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela05.PNG"   />
+<div class="legenda">
+    Caso não haja mais vagas no elevador ele informará que o elevador estar na sua OCUPAÇÃO MAXIMA.
+</div>
+</div>
+<h3> Saindo do Elevador</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela06.PNG"   />
+<div class="legenda">
+    Para sair do Elevador utilize a opção <strong>O</strong><br/>
+    Podem ser utilizados os atalhos do teclado <i>[DELETE] OU SETA DA ESQUERDA</i>
+
+</div>
+</div>
+<h3> Elevador Vazio</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela07.PNG"   />
+<div class="legenda">
+  Caso não haja pessoas para sair do Elevador será informado que o elevador está VAZIO.
+</div>
+</div>
+<h3> Subindo um Andar</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela08.PNG"   />
+<div class="legenda">
+    Para subir um andar utilize a opção <strong>U</strong>
+    <br/>
+    Pode ser utilizado o atalho do teclado <i>SETA PARA CIMA</i>
+</div>
+</div><h3> Último Andar</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela09.PNG"   />
+<div class="legenda">
+    
+   Caso o Elevador tenha alcançado o Último Andar ele apresentará a informação.
+     
+</div>
+</div><h3> Descendo um Andar</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela10.PNG"   />
+<div class="legenda">
+    
+    Para descer um andar utilize a opção <strong>D</strong>
+    <br/>
+    Pode ser utilizado o atalho do teclado <i>SETA PARA BAIXO</i>
+</div>
+</div>
+
+<h3> Andar Terréo</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela11.PNG"   />
+<div class="legenda">
+    Caso o elevador esteja no andar inicial ele apresentará a informação na Tela.
+</div>
+</div><h3> Sair do Sistema</h3>
+<div class="tela">
+    <img height="400px" src="~/img/tela11.PNG"   />
+<div class="legenda">
+  Para sair do sistema utilize a opção <strong>Q</strong> ou a tecla de atalho <i>[ESC]</i>
+</div>
 </div>

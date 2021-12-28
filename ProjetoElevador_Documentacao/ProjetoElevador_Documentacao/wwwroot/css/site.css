@@ -69,3 +69,32 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.tela {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.legenda {
+    padding-bottom: 1px;
+    padding-top: 2px;
+}
+.summary {
+    font-size: 1.2em;
+    font-family: Monotype;
+    padding-bottom: 3px;
+}
+
+.param {
+    padding-top: 4px;
+    font-style: italic;
+}
+
+.retorno {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+

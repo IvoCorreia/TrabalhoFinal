@@ -3,4 +3,59 @@
 }
 <h1>@ViewData["Title"]</h1>
 
+
+	
 <p>Documentacao do Projeto</p>
+
+
+<h1>Elevador.CS</h1>
+
+<h2>Construtor Elevador(int capacidade = 4, int totalAndares = 4)</h2>
+   <div class="summary">     Contrutor do Elevador inicializa com capacidade de 4 pessoas e 
+         estrutura para 4 andares</div>
+      
+     <div class="param" id="capacidade"> Capacidade de passageiros do Elevador</div><br/>
+         <div class="param" id="totalAndares">Total de andares do Elevador</div>
+<h2>  internal int Ocupacao()</h2>
+         <div class="summary">
+           Informa a quantidade de pessoas do elevador
+         </div>
+         <div class="retorno"> Retona: (int) pessoas no elevador</div>
+
+
+ <h2>public int Entrar(String nome, int andar)</h2>
+       <div class="summary">
+         Adicionar uma pessoa no elevador
+         </div>
+         <div class="param" id="nome">Parametro: Nome -> nome do passageiro</div>
+         <div class="param" id="andar">Parametro: Andar -> andar de destino do passageiro</div>
+         <div class="retorno"> Retona: </div>
+ <h2>public int Sair()</h2>
+       <div class="summary">
+         Permite uma pessoa sair do Elevador
+         </div>
+         <div class="retorno"> Retona: nova quantidade de passageiros do elevador</div>
+
+  <h2>int Subir()</h2>
+    <div class="summary">
+         Sobe o elevador
+         </div>
+         <div class="retorno"> Retona: novo andar que se encontra o Elevador</div>
+  <h2>int Descer() </h2>
+     <div class="summary">
+         Desce o elevador
+         </div>
+         <div class="retorno"> Retona: devolve o novo andar do elevador</div>
+  <h2> int OndeEsta()</h2>
+         <div class="summary">
+           informa posicao atual do elevador
+         </div>
+         <div class="retorno"> Retona: devolve a posicao do elevador</div>
+  <h2>  int QuantasVagas()</h2>
+       <div class="summary">
+           retorna as vagas disponiveis
+         </div>
+         <div class="retorno"> Retona: devolve a quantidade de vagas</div>
+ 
+
+

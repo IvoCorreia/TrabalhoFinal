@@ -138,11 +138,11 @@ namespace ProjetoElevador
 
             Console.WriteLine("============== SISTEMA DE ELEVADOR ==============");
             Console.WriteLine("Digite uma opção: (__)");
-            Console.WriteLine("( S ) para Entrar (TECLA PARA DIREITA OU [ENTER])");
+            Console.WriteLine("( I ) para Entrar (TECLA PARA DIREITA OU [ENTER])");
             Console.WriteLine("( O ) para Sair (TECLA PARA ESQUERDA OU [DELETE])");
             Console.WriteLine("( U ) para Subir um Andar (TECLA PARA CIMA)");
             Console.WriteLine("( D ) para Descer um Andar (TECLA PARA BAIXO)");
-            Console.WriteLine("( S ) para Definir PADRÕES DO ELEVADOR)");
+            Console.WriteLine("( S ) para Definir PADRÕES DO ELEVADOR");
             Console.WriteLine("( Q ) para Sair do Sistema (TECLA ESC)");
         }
     }
